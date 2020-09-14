@@ -6,32 +6,32 @@
 /*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/14 12:54:33 by user42            #+#    #+#             */
-/*   Updated: 2020/09/14 13:25:46 by user42           ###   ########.fr       */
+/*   Updated: 2020/09/14 17:54:30 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_atoi(char *str)
+int		ft_atoi(char *str)
 {
-    int res;
-    int sign;
-    int i;
+	int res;
+	int sign;
+	int i;
 
-    res = 0;
-    sign = 1;
-    i = 0;
-    while (str[i] == '\t' || str[i] == '\v' || str[i] == '\n' || str[i] == '\r'
-    || str[i] == '\f' || str[i] == ' ')
-        i++;
-    if (str[i] == '+' || str[i] == '-')
-    {
-        if (str[i] == '-')
-            sign = -1;
-        i++;
-    } 
-    while (str[i] >= '0' && str[i] <= '9')
-    {
-        res = res * 10 + (str[i] - '0');
-        i++;
-    }
-    return (res * sign);
+	res = 0;
+	sign = 1;
+	i = 0;
+	while (str[i] == '\t' || str[i] == '\v' || str[i] == '\n' || str[i] == '\r'
+	|| str[i] == '\f' || str[i] == ' ')
+		i++;
+	if (str[i] == '+' || str[i] == '-')
+	{
+		if (str[i] == '-')
+			sign = -1;
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		res = res * 10 + (str[i] - '0');
+		i++;
+	}
+	return (res * sign);
 }
