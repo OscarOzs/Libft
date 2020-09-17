@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/14 19:00:45 by user42            #+#    #+#             */
-/*   Updated: 2020/09/17 15:19:40 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/09/18 01:03:28 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static	int	ft_strlencustom(const	char *str)
 
 char		*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	int		i;
+	size_t	i;
 	char	*res;
 
 	if (ft_strlencustom(little) == 0)

@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/17 17:53:43 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/09/18 00:34:38 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/09/18 01:01:35 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int		i;
+	size_t	i;
 	char	*res;
 	char	*temp;
 

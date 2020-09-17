@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/17 15:07:18 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/09/17 15:20:08 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/09/18 01:02:21 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	int				i;
+	size_t			i;
 	unsigned char	*tempfill;
 
 	i = 0;
