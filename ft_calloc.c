@@ -6,11 +6,11 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/01 17:45:56 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/10/12 19:38:30 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/10/12 19:57:35 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

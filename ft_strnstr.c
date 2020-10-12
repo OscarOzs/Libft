@@ -6,11 +6,11 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/14 19:00:45 by user42            #+#    #+#             */
-/*   Updated: 2020/10/12 19:37:27 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/10/12 19:56:58 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 static	int	ft_islittle(const	char *s1, const	char *s2)
 {

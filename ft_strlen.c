@@ -6,11 +6,11 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 20:14:32 by user42            #+#    #+#             */
-/*   Updated: 2020/10/12 19:37:36 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/10/12 19:57:03 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 size_t	ft_strlen(const	char *s)
 {
