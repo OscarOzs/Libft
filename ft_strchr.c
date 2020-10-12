@@ -6,11 +6,11 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 14:42:27 by user42            #+#    #+#             */
-/*   Updated: 2020/09/17 15:20:03 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/10/12 19:37:50 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <libft.h>
 
 char	*ft_strchr(const char *s, int c)
 {

@@ -6,9 +6,11 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/14 12:54:33 by user42            #+#    #+#             */
-/*   Updated: 2020/09/17 15:20:42 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/10/12 19:38:38 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <libft.h>
 
 int		ft_atoi(char *str)
 {

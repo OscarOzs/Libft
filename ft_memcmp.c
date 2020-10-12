@@ -6,11 +6,11 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/18 00:37:35 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/09/18 01:00:01 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/10/12 19:37:59 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <libft.h>
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

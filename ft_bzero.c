@@ -6,11 +6,11 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/17 15:23:18 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/09/17 16:54:44 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/10/12 19:38:35 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <libft.h>
 
 void	ft_bzero(void *s, size_t n)
 {
