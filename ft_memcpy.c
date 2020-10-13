@@ -6,28 +6,27 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/17 16:04:22 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/09/17 16:54:18 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/10/13 02:03:50 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	int			i;
-	char		*tempforfill;
-	const void	*temp;
+	size_t	i;
+	char	*ptr_dest;
+	char	*ptr_src;
 
-	temp = src;
-	tempforfill = dest;
-	i = 0;
-	while (i < n)
+	if (n == 0 || dest == src)
+		return (dest);
+	i = n - 1;
+	ptr_dest = (char*)dest;
+	ptr_src = (char*)src;
+	while (i > 0)
 	{
-		*(char*)tempforfill = *(char*)src;
-		tempforfill++;
-		src++;
-		i++;
+		ptr_dest[i] = ptr_src[i];
+		i--;
 	}
-	src = temp;
-	return (dest);
+	return (ptr_dest);
 }
