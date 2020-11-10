@@ -6,12 +6,11 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/15 18:57:16 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/10/16 18:05:04 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/11/10 18:47:13 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	ft_get_size_nbr(int nbr)
 {
@@ -48,7 +47,7 @@ char		*ft_itoa(int n)
 		str[0] = '-';
 		nbr *= -1;
 	}
-	if ((str = (char*)malloc(sizeof(char) * len_str + 1)) == NULL)
+	else if ((str = (char*)malloc(sizeof(char) * len_str + 1)) == NULL)
 		return (NULL);
 	str[len_str] = '\0';
 	len_str--;
