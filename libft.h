@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/12 19:30:21 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/11/10 18:22:31 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/11/10 20:42:57 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
