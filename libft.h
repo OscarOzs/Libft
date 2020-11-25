@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/12 19:30:21 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/11/18 16:49:24 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/11/25 15:33:37 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <string.h>
 # include <unistd.h>
 
-typedef struct s_list
+typedef struct		s_list
 {
 	void			*content;
 	struct s_list	*next;
@@ -57,6 +57,7 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **alst, t_list *new);
 
 
 
