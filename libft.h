@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/12 19:30:21 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/11/29 17:27:21 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/11/29 20:16:42 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **alst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
+void	ft_lstiter(t_list *lst, void (*f)(void*));
 
 
 #endif
