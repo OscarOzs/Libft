@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/10 20:43:36 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/11/12 18:00:24 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/01 17:29:23 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,9 +82,7 @@ char		*ft_strtrim(char const *s1, char const *set)
 {
 	char	*finalstr;
 	int		finalstr_len;
-	int		i;
 
-	i = 0;
 	finalstr_len = final_len(s1, set);
 	if ((finalstr = (char*)malloc(sizeof(char) * finalstr_len + 1)) == NULL)
 		return (NULL);
