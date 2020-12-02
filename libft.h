@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/12 19:30:21 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/11/30 18:00:04 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/02 15:24:48 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ void				*ft_memset(void *s, int c, size_t n);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strdup(const char *s);
 size_t				ft_strlcpy(char *dst, const char *src, size_t size);
+size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlen(const	char *s);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strnstr(const char *big, const char *little,
