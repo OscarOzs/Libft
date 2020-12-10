@@ -6,53 +6,41 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/14 19:00:45 by user42            #+#    #+#             */
-/*   Updated: 2020/10/12 19:56:58 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/10 21:02:08 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int	ft_islittle(const	char *s1, const	char *s2)
+static	int	is_little(const	char *s1, const	char *s2, size_t i, size_t len)
 {
-	int i;
+	size_t j;
 
-	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
+	j = 0;
+	while (s1[j] == s2[i] && s1[i] != '\0' && s2[i] != '\0' && i < len)
+	{
 		i++;
-	if (s1[i] == '\0')
+		j++;
+	}
+	if (s1[j] == '\0')
 		return (1);
 	else
 		return (0);
 }
 
-static	int	ft_strlencustom(const	char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
 char		*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
-	char	*res;
 
-	if (ft_strlencustom(little) == 0)
-	{
-		res = (char*)big;
-		return (res);
-	}
+	if (ft_strlen(little) == 0)
+		return ((char*)big);
 	i = 0;
-	res = NULL;
 	while (big[i] != '\0' && i < len)
 	{
-		if (ft_islittle(little, &big[i]) == 1)
+		if (big[i] == little[0])
 		{
-			res = (char*)&big[i];
-			return (res);
+			if (is_little(little, big, i, len) == 1)
+				return ((char*)big + i);
 		}
 		i++;
 	}
