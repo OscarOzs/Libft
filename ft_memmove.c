@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/17 16:54:35 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/12/01 23:56:56 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/10 21:07:02 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		}
 	}
 	else
-	{
 		while (i < n)
 		{
 			ptr_dest[i] = ptr_src[i];
 			i++;
 		}
-	}
 	return (ptr_dest);
 }

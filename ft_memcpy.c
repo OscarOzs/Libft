@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/17 16:04:22 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/12/01 22:16:04 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/10 21:04:49 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*ptr_dest;
 	unsigned char	*ptr_src;
 
