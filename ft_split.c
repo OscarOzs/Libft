@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/15 00:46:00 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/10/15 18:51:56 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/14 19:49:58 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,23 @@
 
 static	size_t	ft_count_word(char const *str, char c)
 {
-	size_t	count;
+	size_t	size;
 	int		i;
 
 	i = 0;
-	count = 0;
+	size = 0;
 	while (str[i] != '\0')
 	{
 		if (str[i] != '\0' && str[i] != c)
 		{
-			count++;
+			size++;
 			while (str[i] != '\0' && str[i] != c)
 				i++;
 		}
 		else
 			i++;
 	}
-	return (count);
+	return (size);
 }
 
 static	char	**ft_malloc_str(char **strs, char const *str, char c)
@@ -95,6 +95,8 @@ char			**ft_split(char const *s, char c)
 	char		**finaltab;
 	size_t		finaltab_len;
 
+	if (s == NULL)
+		return (NULL);
 	finaltab_len = ft_count_word(s, c);
 	if ((finaltab = (char**)malloc(sizeof(char*) * finaltab_len + 1)) == NULL)
 		return (NULL);
