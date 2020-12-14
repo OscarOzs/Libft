@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 22:52:24 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/11/10 20:41:51 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/14 19:18:18 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,27 +15,32 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char			*str;
-	unsigned int	i;
-	int				temp;
+	size_t			i;
+	unsigned int	len_s;
 
-	i = 0;
-	temp = start;
-	while (s[temp] != '\0' && i < len)
-	{
-		temp++;
-		i++;
-	}
-	if (s[temp] == '\0' && i != len)
-		i++;
-	if ((str = (char*)malloc(sizeof(char) * i)) == NULL)
+	if (s == NULL)
 		return (NULL);
-	str[i - 1] = '\0';
-	i = 0;
-	while (i < (len - 1) && s[start] != '\0')
+	len_s = ft_strlen(s);
+	if (start < len_s && len > 0)
 	{
-		str[i] = s[start];
-		i++;
-		start++;
+		str = (char*)malloc(sizeof(char) * (len + 1));
+		if (str == NULL)
+			return (NULL);
+		i = 0;
+		while (s[start] != '\0' && i < len)
+		{
+			str[i] = s[start];
+			i++;
+			start++;
+		}
+		str[i] = '\0';
+	}
+	else
+	{
+		str = (char*)malloc(sizeof(char) * 1);
+		if (str == NULL)
+			return (NULL);
+		str[0] = '\0';
 	}
 	return (str);
 }
