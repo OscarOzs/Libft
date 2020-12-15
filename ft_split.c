@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/15 00:46:00 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/12/14 19:49:58 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/15 16:41:13 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,11 +53,11 @@ static	char	**ft_malloc_str(char **strs, char const *str, char c)
 			}
 			if ((strs[size] = (char*)malloc(sizeof(char) * len + 1)) == NULL)
 				return (NULL);
-			strs[size][len] = '\0';
-			size++;
+			strs[size++][len] = '\0';
 			len = 0;
 		}
-		i++;
+		else
+			i++;
 	}
 	return (strs);
 }
