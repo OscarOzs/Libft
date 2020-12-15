@@ -6,13 +6,14 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/15 18:57:16 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/11/10 18:47:13 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/15 17:19:14 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "stdio.h"
 
-static int	ft_get_size_nbr(int nbr)
+static int	ft_get_size_nbr(long nbr)
 {
 	int count;
 
