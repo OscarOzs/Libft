@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/27 17:55:47 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/12/15 17:25:53 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/15 17:55:57 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		{
 			ft_lstdelone(*lst, del);
 			(*lst) = (*lst)->next;
-			free((*lst));
 		}
 		*lst = NULL;
 	}
