@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 22:52:24 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/12/14 19:18:18 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/29 17:10:08 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 			return (NULL);
 		i = 0;
 		while (s[start] != '\0' && i < len)
-		{
-			str[i] = s[start];
-			i++;
-			start++;
-		}
+			str[i++] = s[start++];
 		str[i] = '\0';
 	}
 	else
