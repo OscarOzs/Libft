@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/27 17:55:47 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/12/29 17:15:01 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/29 17:16:55 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;
-	
+
 	if (*lst != NULL && del != NULL)
 	{
 		while (*lst != NULL)
