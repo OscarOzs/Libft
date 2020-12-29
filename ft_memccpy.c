@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 22:12:50 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/10/14 22:47:41 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/29 17:25:37 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 
 	if (src == dest || n == 0)
 		return (NULL);
-	ptr_dest = dest;
-	ptr_src = src;
+	ptr_dest = (unsigned char*)dest;
+	ptr_src = (unsigned char*)src;
 	i = 0;
 	while (i < n)
 	{
