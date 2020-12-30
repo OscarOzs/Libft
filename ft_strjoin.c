@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 22:59:31 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/10/15 00:43:42 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/30 18:10:04 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ char			*ft_strjoin(char const *s1, char const *s2)
 	char	*finalstr;
 	size_t	finalstr_len;
 
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
 	finalstr_len = ft_strlen(s1) + ft_strlen(s2);
 	if ((finalstr = (char*)malloc(sizeof(char) * finalstr_len + 1)) == NULL)
 		return (NULL);
