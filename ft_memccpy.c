@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 22:12:50 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/12/29 17:25:37 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/30 17:38:25 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
 	unsigned char		*ptr_dest;
-	const unsigned char	*ptr_src;
+	unsigned char		*ptr_src;
 	size_t				i;
 
 	if (src == dest || n == 0)
