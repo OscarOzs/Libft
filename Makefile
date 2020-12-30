@@ -6,7 +6,7 @@
 #    By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/30 18:27:35 by oozsertt          #+#    #+#              #
-#    Updated: 2020/12/30 19:05:09 by oozsertt         ###   ########.fr        #
+#    Updated: 2020/12/30 19:12:41 by oozsertt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,11 +32,11 @@ ft_putnbr_fd.o ft_putstr_fd.o ft_split.o ft_strchr.o ft_strdup.o ft_strjoin.o \
 ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strmapi.o ft_strncmp.o ft_strnstr.o \
 ft_strrchr.o ft_strtrim.o ft_substr.o ft_tolower.o ft_toupper.o \
 
-BONUS.C = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
-ft_lstiter.c ft_lstlast.c ft_lstmap.c
+BONUS.C = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
+ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c \
 
-BONUS.O = ft_lstadd_back.o ft_lstadd_front.o ft_lstclear.o ft_lstdelone.o \
-ft_lstiter.o ft_lstlast.o ft_lstmap.o
+BONUS.O = ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o \
+ft_lstadd_back.o ft_lstdelone.o ft_lstclear.o ft_lstiter.o ft_lstmap.o \
 
 all : $(NAME)
 
