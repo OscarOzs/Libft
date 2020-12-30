@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/14 12:54:33 by user42            #+#    #+#             */
-/*   Updated: 2020/12/30 17:57:19 by oozsertt         ###   ########.fr       */
+/*   Updated: 2020/12/30 18:05:02 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,4 @@ int		ft_atoi(char *str)
 		i++;
 	}
 	return (res * sign);
-}
-
-#include <stdio.h>
-
-int main(void)
-{
-	printf("%d\n", atoi("16542315642345"));
 }
