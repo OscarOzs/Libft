@@ -6,7 +6,7 @@
 #    By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/30 18:27:35 by oozsertt          #+#    #+#              #
-#    Updated: 2020/12/30 19:12:41 by oozsertt         ###   ########.fr        #
+#    Updated: 2020/12/30 19:16:12 by oozsertt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,5 +53,5 @@ fclean : clean
 re : fclean all
 
 bonus : fclean
-	gcc $(FLAGS) -c $(BONUS.C)
-	ar -rcs $(NAME) $(BONUS.O)
+	gcc $(FLAGS) -c $(FILES.C) $(BONUS.C)
+	ar -rcs $(NAME) $(FILES.O) $(BONUS.O)
