@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/18 00:37:35 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/12/10 21:05:04 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/01/04 10:46:20 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	unsigned char	*ptrs1;
 	unsigned char	*ptrs2;
 
+	if (n == 0)
+		return (0);
 	i = 0;
 	ptrs1 = (unsigned char*)s1;
 	ptrs2 = (unsigned char*)s2;
