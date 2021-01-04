@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/14 18:21:39 by user42            #+#    #+#             */
-/*   Updated: 2020/12/29 17:06:09 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/01/04 16:21:13 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 	size_t	j;
 
 	temp = (char*)s;
-	if ((char)c == '\0')
+	if ((unsigned char)c == '\0')
 		return (temp + (ft_strlen(s)));
 	i = 0;
 	j = 0;
