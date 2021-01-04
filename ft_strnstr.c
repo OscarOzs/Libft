@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/14 19:00:45 by user42            #+#    #+#             */
-/*   Updated: 2020/12/10 21:02:08 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/01/04 16:36:20 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,19 +28,19 @@ static	int	is_little(const	char *s1, const	char *s2, size_t i, size_t len)
 		return (0);
 }
 
-char		*ft_strnstr(const char *big, const char *little, size_t len)
+char		*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 
-	if (ft_strlen(little) == 0)
-		return ((char*)big);
+	if (ft_strlen(needle) == 0)
+		return ((char*)haystack);
 	i = 0;
-	while (big[i] != '\0' && i < len)
+	while (haystack[i] != '\0' && i < len)
 	{
-		if (big[i] == little[0])
+		if (haystack[i] == needle[0])
 		{
-			if (is_little(little, big, i, len) == 1)
-				return ((char*)big + i);
+			if (is_little(needle, haystack, i, len) == 1)
+				return ((char*)haystack + i);
 		}
 		i++;
 	}
