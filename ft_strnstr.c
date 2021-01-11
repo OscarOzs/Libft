@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/14 19:00:45 by user42            #+#    #+#             */
-/*   Updated: 2021/01/04 16:36:20 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/01/11 11:35:34 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static	int	is_little(const	char *s1, const	char *s2, size_t i, size_t len)
 	size_t j;
 
 	j = 0;
-	while (s1[j] == s2[i] && s1[i] != '\0' && s2[i] != '\0' && i < len)
+	while (s1[j] == s2[i] && s1[j] != '\0' && s2[i] != '\0' && i < len)
 	{
 		i++;
 		j++;
