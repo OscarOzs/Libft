@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/30 16:26:24 by oozsertt          #+#    #+#             */
-/*   Updated: 2021/07/15 10:34:59 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/07/15 10:40:42 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static int	ft_get_size_nbr(long nbr, int base_len)
 	return (i);
 }
 
-char		place_in_base(long nbr, int len_base)
+static char		place_in_base(long nbr, int len_base)
 {
 	if (nbr % len_base >= 10)
 		return ((nbr % len_base) - 10 + 'a');
@@ -33,7 +33,7 @@ char		place_in_base(long nbr, int len_base)
 		return ((nbr % len_base) + '0');
 }
 
-static char		*ft_utoa_base(unsigned int n, char *base)
+char		*ft_utoa_base(unsigned int n, char *base)
 {
 	char	*str;
 	int		len_str;
