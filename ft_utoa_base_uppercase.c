@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/30 16:26:24 by oozsertt          #+#    #+#             */
-/*   Updated: 2021/07/15 10:34:39 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/07/15 10:50:44 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static int	ft_get_size_nbr(long nbr, int base_len)
 static char		place_in_base(long nbr, int len_base)
 {
 	if (nbr % len_base >= 10)
-		return ((nbr % len_base) - 10 + 'a');
+		return ((nbr % len_base) - 10 + 'A');
 	else
 		return ((nbr % len_base) + '0');
 }
