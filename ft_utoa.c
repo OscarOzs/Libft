@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:21:25 by oozsertt          #+#    #+#             */
-/*   Updated: 2021/07/15 10:35:04 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/10/05 15:05:14 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	ft_get_size_nbr(long nbr)
 {
-	int count;
+	int	count;
 
 	if (nbr < 0)
 	{
@@ -32,23 +32,22 @@ static int	ft_get_size_nbr(long nbr)
 	return (count);
 }
 
-char		*ft_utoa(unsigned int n)
+char	*ft_utoa(unsigned int n)
 {
 	char	*str;
-	int		len_str;
+	size_t	len_str;
 	long	nbr;
 
 	nbr = n;
 	len_str = ft_get_size_nbr(nbr);
+	str = (char *)malloc(sizeof(char) * (len_str + 1));
+	if (str == NULL)
+		return (NULL);
 	if (nbr < 0)
 	{
-		if ((str = (char*)malloc(sizeof(char) * len_str + 1)) == NULL)
-			return (NULL);
 		str[0] = '-';
 		nbr *= -1;
 	}
-	else if ((str = (char*)malloc(sizeof(char) * len_str + 1)) == NULL)
-		return (NULL);
 	str[len_str] = '\0';
 	len_str--;
 	while (nbr >= 10)

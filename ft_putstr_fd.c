@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/12 21:05:43 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/12/30 18:14:47 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/10/05 14:47:50 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int i;
+	int	i;
 
 	if (s != NULL)
 	{

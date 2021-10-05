@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/15 00:46:00 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/12/15 16:41:13 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/10/05 14:55:53 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ static	size_t	ft_count_word(char const *str, char c)
 
 static	char	**ft_malloc_str(char **strs, char const *str, char c)
 {
-	int i;
-	int len;
-	int size;
+	int	i;
+	int	len;
+	int	size;
 
 	i = 0;
 	len = 0;
@@ -46,12 +46,10 @@ static	char	**ft_malloc_str(char **strs, char const *str, char c)
 	{
 		if (str[i] != c && str[i] != '\0')
 		{
-			while (str[i] != c && str[i] != '\0')
-			{
-				i++;
+			while (str[i] != c && str[i++] != '\0')
 				len++;
-			}
-			if ((strs[size] = (char*)malloc(sizeof(char) * len + 1)) == NULL)
+			strs[size] = (char *)malloc(sizeof(char) * (len + 1));
+			if (strs[size] == NULL)
 				return (NULL);
 			strs[size++][len] = '\0';
 			len = 0;
@@ -64,9 +62,9 @@ static	char	**ft_malloc_str(char **strs, char const *str, char c)
 
 static	char	**ft_fill_tab(char const *str, char **strs, char c)
 {
-	int i;
-	int j;
-	int k;
+	int	i;
+	int	j;
+	int	k;
 
 	i = 0;
 	j = 0;
@@ -90,7 +88,7 @@ static	char	**ft_fill_tab(char const *str, char **strs, char c)
 	return (strs);
 }
 
-char			**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char		**finaltab;
 	size_t		finaltab_len;
@@ -98,7 +96,8 @@ char			**ft_split(char const *s, char c)
 	if (s == NULL)
 		return (NULL);
 	finaltab_len = ft_count_word(s, c);
-	if ((finaltab = (char**)malloc(sizeof(char*) * finaltab_len + 1)) == NULL)
+	finaltab = (char **)malloc(sizeof(char *) * (finaltab_len + 1));
+	if (finaltab == NULL)
 		return (NULL);
 	finaltab[finaltab_len] = NULL;
 	finaltab = ft_malloc_str(finaltab, s, c);

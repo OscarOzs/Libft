@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 22:59:31 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/12/30 18:10:04 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/10/05 16:24:16 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static	void	fill_finalstr(char *finalstr, char const *s1, char const *s2)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
@@ -34,7 +34,7 @@ static	void	fill_finalstr(char *finalstr, char const *s1, char const *s2)
 	}
 }
 
-char			*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*finalstr;
 	size_t	finalstr_len;
@@ -42,7 +42,8 @@ char			*ft_strjoin(char const *s1, char const *s2)
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 	finalstr_len = ft_strlen(s1) + ft_strlen(s2);
-	if ((finalstr = (char*)malloc(sizeof(char) * finalstr_len + 1)) == NULL)
+	finalstr = (char *)malloc(sizeof(char) * (finalstr_len + 1));
+	if (finalstr == NULL)
 		return (NULL);
 	finalstr[finalstr_len] = '\0';
 	fill_finalstr(finalstr, s1, s2);

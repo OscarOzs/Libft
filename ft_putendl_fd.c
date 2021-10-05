@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/12 21:25:10 by oozsertt          #+#    #+#             */
-/*   Updated: 2020/12/30 18:14:46 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/10/05 14:47:16 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	int i;
+	int	i;
 
 	if (s != NULL)
 	{

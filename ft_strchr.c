@@ -6,7 +6,7 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 14:42:27 by user42            #+#    #+#             */
-/*   Updated: 2021/01/04 11:02:17 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/10/05 14:56:45 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,14 @@ char	*ft_strchr(const char *s, int c)
 	{
 		if (s[i] == (unsigned char)c)
 		{
-			res = (char*)&s[i];
+			res = (char *)&s[i];
 			return (res);
 		}
 		i++;
 	}
 	if (s[i] == (unsigned char)c)
 	{
-		res = (char*)&s[i];
+		res = (char *)&s[i];
 		return (res);
 	}
 	return (NULL);

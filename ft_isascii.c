@@ -6,15 +6,15 @@
 /*   By: oozsertt <oozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 19:25:52 by user42            #+#    #+#             */
-/*   Updated: 2020/10/12 19:57:28 by oozsertt         ###   ########.fr       */
+/*   Updated: 2021/10/05 15:55:19 by oozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isascii(int c)
+t_bool	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+		return (TRUE);
+	return (FALSE);
 }
